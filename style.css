@@ -1,0 +1,232 @@
+body {
+    background-color: rgb(211, 206, 206);
+
+}
+
+header h1{
+    color:  #c7771b;
+    font-style: italic;
+}
+
+header p1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  background-color: #0a3d62;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.services-intro {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* Card Layout */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Individual Cards */
+.service-card {
+  background: #da7c3e;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: white; 
+}
+
+.service-card p {
+  font-size: 15px;
+  color: white;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: #0a3d62; /* dark logistics blue */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.why-choose-us .intro {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #d1d8e0;
+}
+
+/* Card Layout */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.feature-card {
+  background-color: #da7c3e; /* slightly lighter blue */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background-color: #c6733c;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: white;
+}
+
+
+.nav-links li a:hover {
+  background-color: #d87f00;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 8px 14px;
+  background-color: #c6733c;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap; /* no text wrapping */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;  /* stay on same line */
+}
+
+
+/*ABOUT US PAGE */
+
+
+
+.para {
+  background-color:#0a3d62 ;
+  font-size: xx-large;
+}
+
+.para-cards {
+background-color: #da7c3e; 
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.para p1{
+  color: white;
+}
+
+.ab {
+  background-color: #0a3d62;
+
+}
+
+.ab h1{
+  color: white;
+}
+
+/* contact section */
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: #f4f6f8;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Container for Form + Info */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+
+
+/* Contact Info */
+.contact-info {
+  flex: 1 1 300px;
+  background-color: #da7c3e; 
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-info a {
+  color: #f39c12; /* Highlight link */
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
