@@ -348,3 +348,44 @@ background-color: #da7c3e;
     flex-shrink: 0;
   }
 }
+
+/* LOGO SECTION */
+.logo-section {
+  background-color: #0b3c5d; /* your dark blue */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.logo-section h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* LOGO CONTAINER */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  width: 120px;
+  height: 80px;
+
+  border-radius: 10px;      /* square with soft corners */
+  background-color: #0b3c5d;
+  padding: 12px;
+
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+  .logo-container img {
+    width: 130px;
+    height: 80px;
+    padding: 12px;
+  }
+}
+
