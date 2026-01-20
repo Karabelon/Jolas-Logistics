@@ -230,3 +230,58 @@ background-color: #da7c3e;
     align-items: center;
   }
 }
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: moveLeft 10s linear infinite;
+}
+
+.track img {
+  width: 300px;   /* adjust size */
+  margin-right: 20px;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+#header {
+  padding: 30px 40px 10px;
+}
+
+.brand-title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0b2d45;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.brand-title::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background-color: #d9822b;
+  margin-top: 10px;
+}
