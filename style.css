@@ -114,29 +114,37 @@ header p1{
 }
 
 
-.nav-links li a:hover {
-  background-color: #d87f00;
-}
-
-.nav-links li a {
-  display: block;
-  padding: 8px 14px;
-  background-color: #c6733c;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 14px;
-  white-space: nowrap; /* no text wrapping */
+.navbar {
+  padding: 15px 40px;
+  background: transparent;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-  flex-wrap: nowrap;  /* stay on same line */
+  gap: 18px;
 }
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background-color: #d9822b;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #b66b22;
+  transform: translateY(-2px);
+}
+
+
 
 
 /*ABOUT US PAGE */
