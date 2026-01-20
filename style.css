@@ -137,7 +137,14 @@ header p1{
   border-radius: 30px;
   background-color: #d9822b;
   transition: all 0.3s ease;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  min-width: 90px;
 }
+
 
 .nav-links a:hover {
   background-color: #b66b22;
@@ -291,9 +298,13 @@ background-color: #da7c3e;
   margin-top: 10px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap; /* allows wrapping neatly if needed */
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
 }
