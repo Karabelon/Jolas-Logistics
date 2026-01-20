@@ -145,10 +145,7 @@ header p1{
 }
 
 
-
-
 /*ABOUT US PAGE */
-
 
 
 .para {
@@ -292,4 +289,11 @@ background-color: #da7c3e;
   height: 4px;
   background-color: #d9822b;
   margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping neatly if needed */
 }
