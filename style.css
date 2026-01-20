@@ -311,15 +311,23 @@ background-color: #da7c3e;
 }
 
 @media (max-width: 600px) {
+
   .nav-links {
-    gap: 10px;
+    flex-wrap: wrap;              /* allows buttons to move to next line */
+    justify-content: center;      /* keeps everything centered */
+    gap: 12px;
+  }
+
+  .nav-links li {
+    width: auto;
   }
 
   .nav-links a {
-    font-size: 13px;
-    padding: 7px 14px;
+    min-width: 100px;
+    text-align: center;
   }
 }
+
 
 /* MOBILE FIX ONLY */
 @media (max-width: 768px) {
